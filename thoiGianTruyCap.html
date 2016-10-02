@@ -1,0 +1,101 @@
+<html>
+<head><title>Thoi Gian Truy Cap</title>
+  <meta charset="utf-8">
+        
+        <script src='Chart.min.js'></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+div.cities {
+    background-color: blue;
+    color: white;
+    margin: 20px 0 20px 0;
+    padding: 20px;
+} 
+
+</style>
+</head>
+<body>
+<div>
+<a href="LTWeb-IELTS.html">
+<img align ="center" src="skpt.jpg" alt="logo 1" style="width:700;height:140;">
+</a>
+</div>
+<div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WebSite hỗ trợ thi IELTS</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="LTWeb-IELTS.html">Home</a></li>
+      <!--<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Page 1-1</a></li>
+          <li><a href="#">Page 1-2</a></li>
+          <li><a href="#">Page 1-3</a></li>
+        </ul> -->
+      </li>
+      <li><a href="Gioithieu.html">Giới thiệu</a></li>
+	  <li><a href="LienHe.html">Liên hệ</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="LTWeb-IELTS.html#"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+    </ul>
+  </div>
+</nav>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-2">
+		<div class="container">
+	<ul class="col-sm-2 nav nav-pills nav-stacked">
+		<li class="active"><a href ="#">Danh Mục Dành Cho Admin</a></li>
+    <h4><a href ="admin.html">Quản Lý User</a></h4>
+    <ul>
+      <li><a href ="thoiGianTruyCap.html">Thời Gian Truy Cập</a></li>
+      <li><a href ="khoaTaiKhoan.html">Khóa Tài Khoản</a></li>
+    </ul>
+       <h4><a href ="tinNhan.html">Tin Nhắn</a></h4>
+    <ul>
+      <li><a href ="tinNhan.html">Hộp Thư Đến</a></li>
+      <li><a href ="soanTin.html">Soạn Tin</a></li>
+		
+	</ul>
+		</div>
+	</div>
+    <div class="col-sm-8" align="justify">
+		<h4><a href ="admin.html">Quản Lý User</a></h4>
+      <li><a href ="thoiGianTruyCap.html">Thời Gian Truy Cập</a></li> <br> <br>
+<canvas id="buyers" width="600" height="400"></canvas>
+<script>
+// line chart data
+    var buyerData = {
+    labels : ["January","February","March","April","May","June"],
+    datasets : [
+        {
+            fillColor : "rgba(172,194,132,0.4)",
+            strokeColor : "#ACC26D",
+            pointColor : "#fff",
+            pointStrokeColor : "#9DB86D",
+            data : [203,156,99,251,305,247]
+        }
+    ]
+}
+    var buyers = document.getElementById('buyers').getContext('2d');
+    new Chart(buyers).Line(buyerData);
+</script>
+
+<br><br>
+   
+	</div>
+	<div class="col-sm-2"></div>
+  </div>
+</div>
+
+		
+</body>
+</html>
